@@ -1,5 +1,10 @@
 {{ define "main" }}
 <main>
+
+  <div class="homepage-content">
+    {{.Content}}
+  </div>
+
     <ul id="post-list">
     {{ range .Paginator.Pages }}
         <li>

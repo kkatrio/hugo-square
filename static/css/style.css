@@ -5,12 +5,10 @@ body{
   line-height: 1.5em;
 }
 
-
 .menu li { display: inline-block; }
 .menu a {
   padding: 10px;
 }
-
 
 .post-header {
 	background-color: #F5F5F5;
@@ -22,7 +20,7 @@ body{
 	float: left;
 }
 
-.post-link>a{
+.post-link > a{
   text-decoration: none;
 }
 
@@ -48,3 +46,8 @@ body{
     padding: 6px 8px;
     float: left;
   }
+
+i {
+  margin: 10px 20px 10px 0;
+  color: #333;
+}
