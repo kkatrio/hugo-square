@@ -3,6 +3,7 @@ body{
   margin: auto;
   padding: 1em;
   line-height: 1.5em;
+  font-family: 'Niramit', sans-serif;
 }
 
 .menu li { display: inline-block; }
@@ -50,4 +51,9 @@ body{
 i {
   margin: 10px 20px 10px 0;
   color: #333;
+}
+
+code {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 85%;
 }
