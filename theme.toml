@@ -3,19 +3,13 @@
 
 name = "Square"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/kkatrio/square/blob/master/LICENSE"
 description = ""
-homepage = "http://example.com/"
-tags = []
+homepage = ""
+tags = ["minimal", "clean", "simple"]
 features = []
 min_version = "0.41"
 
 [author]
-  name = "Kostas Katrioplas"
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Kostis Katrioplas"
+  homepage = "http://dikatrio.com/"
