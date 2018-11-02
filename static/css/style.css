@@ -2,7 +2,7 @@ body{
   max-width: 800px;
   margin: auto;
   padding: 1em;
-  font-family: 'EB Garamond', serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 14pt;
 }
 
@@ -54,6 +54,6 @@ i {
 }
 
 code {
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 85%;
 }
