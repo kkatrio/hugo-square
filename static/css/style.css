@@ -2,8 +2,8 @@ body{
   max-width: 800px;
   margin: auto;
   padding: 1em;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 14pt;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 11pt;
 }
 
 .menu li { display: inline-block; }
