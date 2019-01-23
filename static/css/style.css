@@ -7,6 +7,12 @@ body{
   color: #444
 }
 
+blockquote{
+   padding: 0 1em;
+   border-left: 8px solid #efefef;
+   overflow: auto;
+}
+
 .menu li { display: inline-block; }
 .menu a {
   padding: 10px;
@@ -56,6 +62,5 @@ i {
 
 code {
   font-family: monospace;
-  font-size: 85%;
   line-height: 1;
 }
