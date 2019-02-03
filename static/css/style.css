@@ -31,9 +31,18 @@ nav ul{
 }
 
 .post-header {
-	background-color: #F5F5F5;
+	/*background-color: #F5F5F5;*/
 	overflow: hidden;
-	padding: 0 5px 0 5px;
+	/*padding: 0 5px 0 5px;*/
+    margin: 10px 10px;
+}
+
+.post-link{
+    margin: 0;
+}
+
+.post-date{
+    margin: 0;
 }
 
 .post-link {
