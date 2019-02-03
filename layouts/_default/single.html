@@ -1,8 +1,8 @@
 {{ define "main" }}
 <div class="article-meta">
-<h1><span class="title">{{ .Title | markdownify }}</span></h1>
-{{ with .Params.author }}<h2 class="author">{{ . }}</h2>{{ end }}
-{{ if (gt .Params.date 0) }}<h6 class="date">{{ .Date.Format "2006/01/02" }}</h6>{{ end }}
+    <h1><span class="title">{{ .Title | markdownify }}</span></h1>
+    {{ with .Params.author }}<h2 class="author">{{ . }}</h2>{{ end }}
+    {{ if (gt .Params.date 0) }}<h5 class="date">{{ .Date.Format "2006/01/02" }}</h5>{{ end }}
 </div>
 
 <main>
