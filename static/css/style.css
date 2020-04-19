@@ -86,3 +86,7 @@ code {
   line-height: 1;
   font-size: 12px;
 }
+
+.list-content li {
+	margin-bottom: 1rem;
+}
