@@ -7,6 +7,10 @@ body{
   /*color: #444*/
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-family: 'DM Mono', monospace;
+}
+
 p{
   line-height: 1.7;
 }
@@ -51,6 +55,8 @@ nav ul{
 
 .post-link > a{
   text-decoration: none;
+  font-family: sans-serif!important;
+  font-weight: normal;
 }
 
 .post-date {
@@ -61,6 +67,9 @@ nav ul{
 #post-list {
 	list-style: none;
 	padding-left: 0;
+}
+
+#post-list > h4 {
 }
 
 .text-center{
