@@ -99,3 +99,8 @@ code {
 .list-content li {
 	margin-bottom: 1rem;
 }
+
+.project-meta,
+.project-image {
+    margin: 1rem auto;
+}

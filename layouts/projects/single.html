@@ -1,0 +1,19 @@
+{{- define "main" -}}
+<div class="projects-list">
+    <article class="project">
+
+        <header>
+            <h2><a href='{{ .Permalink }}'> {{ .Title }}</a> </h2>
+            <div class="project-meta">{{ .Description }} --- {{ $.Params.period }}</div>
+        </header>
+
+        {{/* throws error https://gohugo.io/content-management/image-processing/#image-rendering */}}
+        {{ $image := .Resources.GetMatch "featured-image" }}
+        <div class="project-image">
+            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+        </div>
+
+        {{ .Content }}
+    </article>
+</div>
+{{- end -}}
