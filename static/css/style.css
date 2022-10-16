@@ -11,6 +11,7 @@ body{
 
 h1, h2, h3, h4, h5, h6{
   font-family: 'DM Mono', monospace;
+  color: #D2991D;
 }
 
 p{
@@ -18,6 +19,10 @@ p{
 }
 
 a{
+  color: #2dbfb8;
+}
+
+a:hover{
   color: aquamarine;
 }
 
@@ -41,70 +46,71 @@ nav ul{
 }
 
 .post-header {
-	/*background-color: #F5F5F5;*/
-	overflow: hidden;
-	/*padding: 0 5px 0 5px;*/
+    /*background-color: #F5F5F5;*/
+    overflow: hidden;
+    /*padding: 0 5px 0 5px;*/
     margin: 10px 10px;
 }
 
 .post-link{
     margin: 0;
+    float: left;
 }
 
 .post-date{
     margin: 0;
 }
 
-.post-link {
-	float: left;
+.post-link > a{
+    text-decoration: none;
+    font-family: sans-serif!important;
+    font-weight: normal;
+    color: antiquewhite
 }
 
-.post-link > a{
-  text-decoration: none;
-  font-family: sans-serif!important;
-  font-weight: normal;
-  color: antiquewhite
+.post-link > a:hover {
+    color: #D2991D;
 }
 
 .post-date {
-	float: right;
-	color: dimgrey;
+    float: right;
+    color: dimgrey;
 }
 
 #post-list {
-	list-style: none;
-	padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 #post-list > h4 {
 }
 
 .text-center{
-  text-align: center;
+    text-align: center;
 }
 
 .pagination{
-  display: inline-block;
+    display: inline-block;
 }
 .pagination > li {
     display: inline;
     padding: 6px 8px;
     float: left;
-  }
+}
 
 i {
-  margin: 10px 20px 10px 0;
-  color: #333;
+    margin: 10px 20px 10px 0;
+    color: #333;
 }
 
 code {
-  font-family: monospace;
-  line-height: 1;
-  font-size: 12px;
+    font-family: monospace;
+    line-height: 1;
+    font-size: 12px;
 }
 
 .list-content li {
-	margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .project-meta,
