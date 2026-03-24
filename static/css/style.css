@@ -1,17 +1,32 @@
+:root {
+  --bg:        #f5f1eb;
+  --ink:       #1a1714;
+  --muted:     #7a7068;
+  --accent:    #118ab2;
+  --menu:      #023047;
+  --headers:   #D2991D;
+  --dmmono:    'DM mono', monospace;
+  --isans:     'IBM Plex Sans', sans-serif;
+}
+
 body{
   max-width: 800px;
   margin: auto;
   padding: 1em;
-  font-family: sans-serif;
+  font-family: var(--isans);
   font-size: 16px;
-  /*font-family: 'Inconsolata', Courier;*/
-  background-color: #222;
-  color: antiquewhite;
+  background-color: var(--bg);
+  color: var(--ink);
+  /* push the footer at the bottom */
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-family: 'DM Mono', monospace;
-  color: #D2991D;
+  /* controls only the headers on the blog posts */
+  font-family: var(--dmmono);
+  color: var(--headers);
 }
 
 p{
@@ -19,22 +34,26 @@ p{
 }
 
 a{
-  color: #2dbfb8;
+  color: var(--accent);
 }
 
 a:hover{
-  color: aquamarine;
+  color: var(--menu);
 }
 
 blockquote{
    padding: 0 1em;
-   border-left: 8px solid #efefef;
+   border-left: 8px solid var(--accent);
    overflow: auto;
 }
 
-.menu li { display: inline-block; }
+.menu li {
+  display: inline-block;
+  font-family: var(--isans);
+}
 .menu a {
   padding: 10px;
+  color: var(--menu);
 }
 
 nav ul{
@@ -46,10 +65,8 @@ nav ul{
 }
 
 .post-header {
-    /*background-color: #F5F5F5;*/
     overflow: hidden;
-    /*padding: 0 5px 0 5px;*/
-    margin: 10px 10px;
+    margin: 10px 10px 10px 0;
 }
 
 .post-link{
@@ -63,26 +80,23 @@ nav ul{
 
 .post-link > a{
     text-decoration: none;
-    font-family: sans-serif!important;
-    font-weight: normal;
-    color: antiquewhite
+    color: var(--muted);
+    font-family: var(--isans);
 }
 
 .post-link > a:hover {
-    color: #D2991D;
+    color: var(--accent);
 }
 
 .post-date {
     float: right;
-    color: dimgrey;
+    color: var(--muted);
+    font-family: var(--isans);
 }
 
 #post-list {
     list-style: none;
     padding-left: 0;
-}
-
-#post-list > h4 {
 }
 
 .text-center{
@@ -109,8 +123,17 @@ code {
     font-size: 12px;
 }
 
+.list-content ul {
+    list-style: none;
+    padding-left: 0;
+}
 .list-content li {
     margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.list-content li a {
+    text-decoration: none;
 }
 
 .project-meta,
@@ -120,4 +143,9 @@ code {
 
 .project {
     margin-bottom: 5rem;
+}
+
+.contact {
+   /* push the footer at the bottom */
+   margin-top: auto;
 }
