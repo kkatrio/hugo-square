@@ -5,21 +5,20 @@
     {{.Content}}
   </div>
 
-    <ul id="post-list">
+  <ul id="post-list">
     {{ range .Paginator.Pages }}
         <li>
-          <div>
-            <div class="post-header">
-              <h4 class="post-link"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-              <h5 class="post-date">{{ .Date.Format "Jan 2, 2006" }}</h5>
-            </div>
-            <!--
-            <div class="post-content"><p>{{ .Content }}</p></div>
-            -->
+          <div class="post-header">
+            <h4 class="post-link"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+            <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
           </div>
+          <!-- Optional: Add excerpt summary here -->
+          <!-- <div class="post-excerpt">{{ .Summary }}</div> -->
         </li>
     {{ end }}
     {{ partial "pagination.html" . }}
-    </ul>
+  </ul>
 </main>
 {{ end }}
